@@ -1,0 +1,23 @@
+{
+  "lastUpdated": "2025-08-18T10:30:00Z",
+  "wantedPersons": [
+    {
+      "dni": "12345678",
+      "name": "Juan Pérez González",
+      "reason": "Fraude financiero",
+      "dateAdded": "2025-08-01"
+    },
+    {
+      "dni": "87654321",
+      "name": "María García López",
+      "reason": "Robo de identidad",
+      "dateAdded": "2025-08-10"
+    },
+    {
+      "dni": "11223344",
+      "name": "Carlos Mendoza Silva",
+      "reason": "Estafa electrónica",
+      "dateAdded": "2025-08-15"
+    }
+  ]
+}
