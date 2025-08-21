@@ -1,7 +1,6 @@
 package com.secureaccesslite.processdata;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.secureaccesslite.model.User;
 
@@ -16,8 +15,8 @@ import java.util.Optional;
 
 public class UserRepository {
 
-    private final String DATA_FILE = "/data/users.json";
-    private List<User> userCache;
+    String DATA_FILE = "/data/users.json";
+    private final List<User> userCache;
 
     public UserRepository() {
         this.userCache = loadUsersFromFile();
@@ -25,9 +24,9 @@ public class UserRepository {
 
     private List<User> loadUsersFromFile() {
         try {
-            InputStream inputStream = UserRepository.class.getResourceAsStream(this.DATA_FILE);
+            InputStream inputStream = UserRepository.class.getResourceAsStream(DATA_FILE);
             if (inputStream == null) {
-                System.err.println("No pudimos obtener el archivo de datos: " + this.DATA_FILE);
+                System.err.println("No pudimos obtener el archivo de datos: " + DATA_FILE);
                 return new ArrayList<>();
             }
 

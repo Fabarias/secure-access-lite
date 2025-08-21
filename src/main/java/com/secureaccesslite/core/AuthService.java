@@ -10,7 +10,7 @@ import java.util.UUID;
 
 public class AuthService {
 
-    private UserRepository userRepository = new UserRepository();
+    private final UserRepository userRepository = new UserRepository();
 
     public User register(String name, String dni, String username, String password) {
         if (this.userRepository.findByUsername(username).isPresent()) {
