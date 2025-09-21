@@ -11,23 +11,23 @@ import javafx.stage.Stage;
 public class App extends Application {
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primeraEtapa) {
         try {
-            FXMLLoader loader = new FXMLLoader();
+            FXMLLoader cargarInterfaz = new FXMLLoader();
 
-            loader.setLocation(getClass().getResource("/fxml/login_view.fxml"));
+            cargarInterfaz.setLocation(getClass().getResource("/fxml/login_view.fxml"));
 
-            Parent root = loader.load();
+            Parent contenedorLogin = cargarInterfaz.load();
 
-            Scene scene = new Scene(root, 350, 400);
+            Scene accesoEscena = new Scene(contenedorLogin, 350, 400);
 
-            primaryStage.setTitle("SecureAccess Lite - Login");
-            primaryStage.setScene(scene);
+            primeraEtapa.setTitle("SecureAccess Lite - Login");
+            primeraEtapa.setScene(accesoEscena);
 
-            primaryStage.setResizable(false);
-            primaryStage.centerOnScreen();
+            primeraEtapa.setResizable(false);
+            primeraEtapa.centerOnScreen();
 
-            primaryStage.show();
+            primeraEtapa.show();
         } catch (Exception e) {
             System.err.println("Error al carga la aplicación:");
             e.printStackTrace();

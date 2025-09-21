@@ -6,7 +6,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/21.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.secureaccesslite.ui.LoginController"
+            fx:controller="com.secureaccesslite.interfazUsuario.LoginController"
             prefHeight="400.0"
             prefWidth="300.0">
 
@@ -21,24 +21,24 @@
         <Label text="Nombre de Usuario:"
                styleClass="field-label"/>
 
-        <TextField fx:id="usernameField"
+        <TextField fx:id="campoUsuario"
                    promptText="usuario"
                    prefWidth="200.0"/>
 
         <Label text="Contraseña:"
                styleClass="field-label"/>
 
-        <PasswordField fx:id="passwordField"
+        <PasswordField fx:id="claveCampo"
                        promptText="contraseña"
                        prefWidth="200.0"/>
 
         <Button text="Ingresar"
-                onAction="#handleLoginButtonAction"
+                onAction="#manejoDeInicioDeSesionConBotonAction"
                 prefWidth="200.0"
                 styleClass="login-button"/>
 
 
-        <Label fx:id="errorMessageLabel"
+        <Label fx:id="errorMensajeEtiqueta"
                textFill="#801d26"
                wrapText="true"
                visible="false"/>
