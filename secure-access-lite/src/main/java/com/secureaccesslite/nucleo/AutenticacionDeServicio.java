@@ -34,7 +34,6 @@ public class AutenticacionDeServicio {
     public Usuario inicioSesion(String nombreUsuario, String clave) {
         Optional<Usuario> usuarioOpcional = repositoripoUsuario.encontrarPorUsuario(nombreUsuario);
 
-
         if (usuarioOpcional.isEmpty()) {
             return null;
         }
