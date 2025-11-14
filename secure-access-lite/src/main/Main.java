@@ -14,7 +14,6 @@ public class Main {
         AutenticacionDeServicio auth = new AutenticacionDeServicio();
     // Optional <UsuarioAdministrador> admin = auth.iniciarSesion(UsuarioAdministrador.class,"Admin","Jonathantl");
      // admin.get().crearPolicia();
-     auth.registro("Kevin", "Jara", "K92","1234AOA");
       }
     }
 
